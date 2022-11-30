@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Microverse Portfolio\] ](#-microverse-portfolio-)
+- [📖 Microverse Portfolio ](#-microverse-portfolio-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -23,9 +23,9 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-# 📖 [Microverse Portfolio] <a name="about-project"></a>
+# 📖 Microverse Portfolio <a name="about-project"></a>
 
-**[Microverse Portfolio]** is a template based personal portfolio project to show my work, professional skills and knowledge to others.
+**Microverse Portfolio** is a template based personal portfolio project to show my work, professional skills and knowledge to others.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,8 +55,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Toolbar or header]**
-- **[Headline section]**
+- **Toolbar or header**
+- **Headline section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,8 +128,6 @@ This project isn't deployed yet.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[My recent works]**
 - [ ] **[About me]**
