@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -14,6 +16,8 @@ body {
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: #E5E5E5;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -42,4 +46,65 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+
+
+/* 
+=====================================
+Toolbar (Header)
+=====================================
+*/
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.toolbar__title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.toolbar__btn {
+  z-index: 100;
+  background: none;
+  outline: none;
+  border: none;
+}
+.toolbar__btn:active {
+  scale: 0.9;
+}
+
+.toolbar__icon {
+  font-size: 1.8rem;
+}
+
+.toolbar__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #FFF;
+
+  transition: transform 300ms ease-in-out;
+  translate: -100%;
+}
+.menu__list {
+  list-style-type: none;
+  margin-top: 5rem;
+  padding: 0;
+}
+.menu__item {
+  line-height: 4rem;
+}
+.menu__link {
+  text-decoration: none;
+  color:  #3A4A42;
+  font-weight: 600;
+  font-size: 2rem;
 }
