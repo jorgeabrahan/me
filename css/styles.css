@@ -17,7 +17,7 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,7 +50,7 @@ h6 {
 
 
 
-/* 
+/*
 =====================================
 Toolbar (Header)
 =====================================
@@ -74,6 +74,7 @@ Toolbar (Header)
   outline: none;
   border: none;
 }
+
 .toolbar__btn:active {
   scale: 0.9;
 }
@@ -89,22 +90,24 @@ Toolbar (Header)
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: #FFF;
-
+  background-color: #fff;
   transition: transform 300ms ease-in-out;
   translate: -100%;
 }
+
 .menu__list {
   list-style-type: none;
   margin-top: 5rem;
   padding: 0;
 }
+
 .menu__item {
   line-height: 4rem;
 }
+
 .menu__link {
   text-decoration: none;
-  color:  #3A4A42;
+  color: #3a4a42;
   font-weight: 600;
   font-size: 2rem;
 }
