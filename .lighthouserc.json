@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "method": "node",
-      "additive": false,
+      "additive": false
     }
   }
 }
