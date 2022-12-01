@@ -71,6 +71,7 @@ Toolbar (Header)
 .toolbar__title {
   font-weight: bold;
   font-size: 1.4rem;
+  color: #28352f;
 }
 
 .toolbar__btn {
@@ -160,12 +161,12 @@ Headline
   gap: 1.2rem;
 }
 
-.headline__btn-container {
+.headline__link-container {
   display: flex;
   justify-content: center;
 }
 
-.headline__btn {
+.headline__link {
   background-color: #fff;
   border: 2px solid #dfe1e6;
   border-radius: 50%;
@@ -173,10 +174,10 @@ Headline
   align-content: center;
 }
 
-.headline__btn span {
+.headline__link span {
   color: #172b4d;
-  line-height: 2.7rem;
   font-size: 2rem;
+  padding: .4rem;
 }
 
 .headline__decorator-rectangle {
@@ -218,4 +219,11 @@ Headline
   right: -2%;
   z-index: -1;
   width: 60px;
+}
+.headline__decorator-small-cylinder {
+  position: absolute;
+  bottom: 27%;
+  right: 60%;
+  z-index: -1;
+  width: 30px;
 }
