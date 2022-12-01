@@ -142,16 +142,16 @@ Headline
 }
 
 .title__name {
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .title__role {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .headline__description {
   font-size: 1.2rem;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .headline__social {
@@ -167,7 +167,7 @@ Headline
 
 .headline__btn {
   background-color: #fff;
-  border: 2px solid #DFE1E6;
+  border: 2px solid #dfe1e6;
   border-radius: 50%;
   display: flex;
   align-content: center;
