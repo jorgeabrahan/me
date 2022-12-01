@@ -133,7 +133,7 @@ Headline
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-image: url("../img/bg-lines.png"), url("../img/decorator-rectangle.png"), url("../img/decorator-cube.png"), url("../img/decorator-cube-incomplete.png"), url("../img/decorator-cube-left.png"), url("../img/decorator-cylinder.png"), url("../img/decorator-small-cylinder.png");
+  background-image: url("../img/decorators/headline/circle-lines.png"), url("../img/decorators/headline/rectangle.png"), url("../img/decorators/headline/cube.png"), url("../img/decorators/headline/cube-incomplete.png"), url("../img/decorators/headline/cube-left.png"), url("../img/decorators/headline/cylinder.png"), url("../img/decorators/headline/small-cylinder.png");
   background-repeat: no-repeat;
   background-position: 50% 20%, 125% 0, 2% 21%, 172% 38%, -11% 75%, 102% 94%, 44% 71%;
   background-size: 700px 680px, 130px, 35px, 180px, 80px, 60px, 25px;
