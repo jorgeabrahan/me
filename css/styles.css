@@ -56,10 +56,7 @@ button:active {
 
 :root {
   --horizontal-spacing: 1.1rem;
-}
-
-main {
-  padding: 0 var(--horizontal-spacing);
+  --border-radius: 8px;
 }
 
 /*
@@ -154,14 +151,14 @@ Headline
 }
 
 .headline__title,
-.works__title {
+.works__title, .aboutme__title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
 }
 
 .title__name,
-.works__title {
+.works__title, .aboutme__title {
   color: #172b4d;
 }
 
@@ -169,7 +166,7 @@ Headline
   color: #36b37e;
 }
 
-.headline__description {
+.headline__description, .aboutme__description {
   font-size: 1.2rem;
   color: #172b4d;
 }
@@ -208,7 +205,11 @@ My works section
 =====================================
 */
 
-.works__title {
+.works {
+  padding: 0 var(--horizontal-spacing);
+}
+
+.works__title, .aboutme__title {
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -226,8 +227,6 @@ My works section
   display: grid;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-
-  --border-radius: 8px;
 }
 
 .works__card {
@@ -268,11 +267,13 @@ My works section
 }
 
 .card__title {
+  color: #3A4A42;
   font-size: 2rem;
   text-align: center;
 }
 
 .card__technologies {
+  color: #3A4A42;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -290,7 +291,7 @@ My works section
   width: max-content;
 }
 
-.card__button {
+.card__button, .aboutme__resume {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -303,10 +304,89 @@ My works section
   transition: box-shadow 250ms ease-in-out;
 }
 
-.card__button:hover {
-  box-shadow: 0 8px 16px #36b37f;
+.card__button:hover, .aboutme__resume:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.card__button:active {
+.card__button:active, .aboutme__resume:active {
   background-color: #008552;
+}
+
+/*
+=====================================
+About me section
+=====================================
+*/
+
+.aboutme__header {
+  padding: 0 var(--horizontal-spacing);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/decorators/about_me/origami-bird.png"), url("../img/decorators/about_me/origami-ship.png");
+  background-position: 115% 8%, -25% 84%;
+  background-size: 120px, 140px;
+  background-repeat: no-repeat;
+}
+
+.aboutme__description {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.aboutme__resume {
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  width: max-content;
+  margin-block: 1rem;
+}
+
+.aboutme__cards {
+  padding: 0 var(--horizontal-spacing);
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.aboutme__card {
+  background-color: #ebf0ee;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.card__icon {
+  margin: 1rem 0 5rem 0;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  width: max-content;
+  margin-inline: auto;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.card__topic {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-bottom: 1.5rem;
+}
+
+.card__list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card__list li {
+  font-weight: 600;
+  background-color: #fff;
+  padding: 0.8rem 0.7rem;
+  border-radius: var(--border-radius);
+  letter-spacing: 0.03em;
+  color: #36B37E;
 }
