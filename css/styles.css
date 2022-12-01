@@ -71,7 +71,7 @@ Toolbar (Header)
   width: 100%;
   background-color: #fff;
   z-index: 50;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .toolbar__title {
@@ -145,13 +145,15 @@ Headline
   margin-top: 2rem;
 }
 
-.headline__title, .works__title {
+.headline__title,
+.works__title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
 }
 
-.title__name, .works__title {
+.title__name,
+.works__title {
   color: #172b4d;
 }
 
@@ -204,8 +206,8 @@ My works section
 }
 
 .works__title-underline {
-  border: 3px solid #36B37E;
-  background-color: #36B37E;
+  border: 3px solid #36b37e;
+  background-color: #36b37e;
   border-radius: 4px;
   width: 50px;
   margin-inline: auto;
@@ -216,6 +218,7 @@ My works section
   display: grid;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
+
   --border-radius: 8px;
 }
 
@@ -259,7 +262,7 @@ My works section
 .card__technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
   padding-left: 0;
   list-style-type: none;
   margin-block: 1rem;
@@ -267,7 +270,7 @@ My works section
 
 .card__technologies li {
   border-radius: var(--border-radius);
-  padding: .4rem .6rem;
+  padding: 0.4rem 0.6rem;
   font-weight: 500;
   background-color: #ebf0ee;
   color: #000;
@@ -281,7 +284,7 @@ My works section
   border: none;
   outline: none;
   border-radius: var(--border-radius);
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   display: block;
   margin-inline: auto;
 }
