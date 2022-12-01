@@ -17,7 +17,6 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #e5e5e5;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -48,6 +47,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+:root {
+  --horizontal-spacing: 1.1rem;
+}
+
 /*
 =====================================
 Toolbar (Header)
@@ -58,7 +61,7 @@ Toolbar (Header)
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: var(--horizontal-spacing);
 }
 
 .toolbar__title {
@@ -108,4 +111,111 @@ Toolbar (Header)
   color: #3a4a42;
   font-weight: 600;
   font-size: 2rem;
+}
+
+/*
+=====================================
+Headline
+=====================================
+*/
+
+.headline {
+  padding: 0 var(--horizontal-spacing);
+  text-align: center;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../img/bg-lines.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 700px 680px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.headline__title {
+  margin-top: 2rem;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  font-weight: 800;
+}
+
+.title__name {
+  color: #172B4D;
+}
+
+.title__role {
+  color: #36B37E;
+}
+
+.headline__description {
+  font-size: 1.2rem;
+  color: #172B4D;
+}
+
+.headline__social {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.headline__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.headline__btn {
+  background-color: #fff;
+  border: 2px solid #DFE1E6;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+}
+
+.headline__btn span {
+  color: #172b4d;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+
+.headline__decorator-rectangle {
+  position: absolute;
+  top: 0%;
+  right: -15%;
+  z-index: -1;
+  width: 130px;
+}
+
+.headline__decorator-cube {
+  position: absolute;
+  top: 18%;
+  left: 6%;
+  z-index: -1;
+  width: 35px;
+  opacity: 0.5;
+}
+
+.headline__decorator-cube-incomplete {
+  position: absolute;
+  top: 30%;
+  right: -38%;
+  z-index: -1;
+  width: 180px;
+}
+
+.headline__decorator-cube-left {
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  z-index: -1;
+  width: 80px;
+}
+
+.headline__decorator-cylinder {
+  position: absolute;
+  bottom: 8%;
+  right: -2%;
+  z-index: -1;
+  width: 60px;
 }
