@@ -46,6 +46,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:active {
   scale: 0.9;
 }
@@ -243,7 +247,12 @@ My works section
   width: 100%;
   aspect-ratio: 1;
   content: "";
-  background-color: #ebf0ee;
+  background-color: #ebf0eea7;
+  transition: background-color 400ms ease-in-out;
+}
+
+.works__card:hover > .card__image-container::before {
+  background-color: #ebf0ee20;
 }
 
 .card__image {
