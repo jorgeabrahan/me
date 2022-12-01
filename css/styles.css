@@ -47,6 +47,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+button:active {
+  scale: 0.9;
+}
+
 :root {
   --horizontal-spacing: 1.1rem;
 }
@@ -74,10 +78,6 @@ Toolbar (Header)
   background: none;
   outline: none;
   border: none;
-}
-
-.toolbar__btn:active {
-  scale: 0.9;
 }
 
 .toolbar__icon {
@@ -138,7 +138,7 @@ Headline
   margin-top: 2rem;
   font-size: 2.8rem;
   line-height: 3.3rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .title__name {
@@ -175,7 +175,7 @@ Headline
 
 .headline__btn span {
   color: #172b4d;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
   font-size: 2rem;
 }
 
