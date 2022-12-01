@@ -151,14 +151,16 @@ Headline
 }
 
 .headline__title,
-.works__title, .aboutme__title {
+.works__title,
+.aboutme__title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
 }
 
 .title__name,
-.works__title, .aboutme__title {
+.works__title,
+.aboutme__title {
   color: #172b4d;
 }
 
@@ -166,7 +168,8 @@ Headline
   color: #36b37e;
 }
 
-.headline__description, .aboutme__description {
+.headline__description,
+.aboutme__description {
   font-size: 1.2rem;
   color: #172b4d;
 }
@@ -209,7 +212,8 @@ My works section
   padding: 0 var(--horizontal-spacing);
 }
 
-.works__title, .aboutme__title {
+.works__title,
+.aboutme__title {
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -267,13 +271,13 @@ My works section
 }
 
 .card__title {
-  color: #3A4A42;
+  color: #3a4a42;
   font-size: 2rem;
   text-align: center;
 }
 
 .card__technologies {
-  color: #3A4A42;
+  color: #3a4a42;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -291,7 +295,8 @@ My works section
   width: max-content;
 }
 
-.card__button, .aboutme__resume {
+.card__button,
+.aboutme__resume {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -302,14 +307,6 @@ My works section
   display: block;
   margin-inline: auto;
   transition: box-shadow 250ms ease-in-out;
-}
-
-.card__button:hover, .aboutme__resume:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.card__button:active, .aboutme__resume:active {
-  background-color: #008552;
 }
 
 /*
@@ -342,6 +339,16 @@ About me section
   margin-block: 1rem;
 }
 
+.card__button:hover,
+.aboutme__resume:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.card__button:active,
+.aboutme__resume:active {
+  background-color: #008552;
+}
+
 .aboutme__cards {
   padding: 0 var(--horizontal-spacing);
   display: grid;
@@ -362,7 +369,7 @@ About me section
   padding: 1rem;
   width: max-content;
   margin-inline: auto;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .card__topic {
@@ -388,5 +395,5 @@ About me section
   padding: 0.8rem 0.7rem;
   border-radius: var(--border-radius);
   letter-spacing: 0.03em;
-  color: #36B37E;
+  color: #36b37e;
 }
