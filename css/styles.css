@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 90px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
@@ -287,4 +291,12 @@ My works section
   padding: 0.8rem 1rem;
   display: block;
   margin-inline: auto;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.card__button:hover {
+  box-shadow: 0 8px 16px #36B37F;
+}
+.card__button:active {
+  background-color: #008552;
 }
