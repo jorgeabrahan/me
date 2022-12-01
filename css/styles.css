@@ -177,7 +177,7 @@ Headline
 .headline__link span {
   color: #172b4d;
   font-size: 2rem;
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 .headline__decorator-rectangle {
@@ -220,6 +220,7 @@ Headline
   z-index: -1;
   width: 60px;
 }
+
 .headline__decorator-small-cylinder {
   position: absolute;
   bottom: 27%;
