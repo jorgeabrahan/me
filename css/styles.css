@@ -411,6 +411,10 @@ Footer
 
 .footer {
   padding: 0 var(--horizontal-spacing);
+  background-image: url("../img/decorators/footer/column.png");
+  background-repeat: no-repeat;
+  background-position: 300% 95%;
+  background-size: 280px;
 }
 
 .footer__title {
