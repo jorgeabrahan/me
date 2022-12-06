@@ -344,9 +344,17 @@
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
             <form class="footer__form" action="">
-                <input type="text" placeholder="Full name" name="" id="" />
-                <input type="email" placeholder="Email address" name="" id="" />
-                <textarea name="" placeholder="Enter comments here" id="" cols="30" rows="10"></textarea>
+                <input type="text" placeholder="Full name" maxlength="30" name="name" id="name" required />
+                <input type="email" placeholder="Email address" name="email" id="email" required />
+                <textarea
+                    placeholder="Enter comments here"
+                    maxlength="500"
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="10"
+                    required
+                ></textarea>
                 <button class="footer__button" type="submit">Get in touch</button>
             </form>
             <ul class="headline__social footer__social">
