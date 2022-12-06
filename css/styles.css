@@ -152,7 +152,8 @@ Headline
 
 .headline__title,
 .works__title,
-.aboutme__title, .footer__title {
+.aboutme__title,
+.footer__title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
@@ -160,7 +161,8 @@ Headline
 
 .title__name,
 .works__title,
-.aboutme__title, .footer__title {
+.aboutme__title,
+.footer__title {
   color: #172b4d;
 }
 
@@ -300,7 +302,8 @@ My works section
 }
 
 .card__button,
-.aboutme__resume, .footer__button {
+.aboutme__resume,
+.footer__button {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -344,12 +347,14 @@ About me section
 }
 
 .card__button:hover,
-.aboutme__resume:hover, .footer__button:hover {
+.aboutme__resume:hover,
+.footer__button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .card__button:active,
-.aboutme__resume:active, .footer__button:active {
+.aboutme__resume:active,
+.footer__button:active {
   background-color: #008552;
 }
 
@@ -449,6 +454,6 @@ Footer
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #42526E;
+  color: #42526e;
   margin-bottom: 4rem;
 }
