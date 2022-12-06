@@ -179,6 +179,7 @@ Headline
 .headline__social {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   gap: 1.2rem;
   list-style-type: none;
   padding-left: 0;
