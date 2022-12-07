@@ -215,6 +215,115 @@ Headline
   padding: 0.4rem;
 }
 
+/*
+=====================================
+My works section
+=====================================
+*/
+
+.works {
+  padding: 0 var(--horizontal-spacing);
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.works__title-underline {
+  border: 3px solid #36b37e;
+  background-color: #36b37e;
+  border-radius: 4px;
+  width: 50px;
+  margin-inline: auto;
+  margin-bottom: 3.5rem;
+}
+
+.works__cards {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.works__card {
+  border: 3px solid #d4dcd8;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__image-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #ebf0eea7;
+  transition: background-color 400ms ease-in-out;
+}
+
+.works__card:hover > .card__image-container::before {
+  background-color: #ebf0ee20;
+}
+
+.card__image {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.card__content {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  translate: 0 -10px;
+}
+
+.card__title {
+  color: #3a4a42;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card__technologies {
+  color: #3a4a42;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-left: 0;
+  list-style-type: none;
+  margin-block: 1rem;
+}
+
+.card__technologies li {
+  border-radius: var(--border-radius);
+  padding: 0.4rem 0.6rem;
+  font-weight: 500;
+  background-color: #ebf0ee;
+  color: #000;
+  width: max-content;
+}
+
+.card__button,
+.aboutme__resume,
+.footer__button {
+  font-size: 1.3rem;
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1rem;
+  display: block;
+  margin-inline: auto;
+  transition: box-shadow 250ms ease-in-out;
+}
+
 @media (max-width: 768px) {
   /*
   =====================================
@@ -306,11 +415,6 @@ Headline
   =====================================
   */
 
-  /* .header {
-    background-position: 50% 80%, 125% 0, 2% 21%, 172% 38%, -11% 75%, 102% 94%, 44% 71%;
-    background-size: 1600px 1580px, 130px, 35px, 180px, 80px, 60px, 25px;
-  } */
-
   .headline {
     gap: 2rem;
   }
@@ -324,6 +428,16 @@ Headline
   }
   .headline__social {
     margin-bottom: 4rem;
+  }
+
+  /*
+  =====================================
+  My works section
+  =====================================
+  */
+
+  .works__cards {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 }
 
@@ -371,112 +485,6 @@ Headline
       160px,
       1600px 1300px;
   }
-}
-
-/*
-=====================================
-My works section
-=====================================
-*/
-
-.works {
-  padding: 0 var(--horizontal-spacing);
-}
-
-.works__title-underline {
-  border: 3px solid #36b37e;
-  background-color: #36b37e;
-  border-radius: 4px;
-  width: 50px;
-  margin-inline: auto;
-  margin-bottom: 3.5rem;
-}
-
-.works__cards {
-  display: grid;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.works__card {
-  border: 3px solid #d4dcd8;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.card__image-container {
-  position: relative;
-}
-
-.card__image-container::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  aspect-ratio: 1;
-  content: "";
-  background-color: #ebf0eea7;
-  transition: background-color 400ms ease-in-out;
-}
-
-.works__card:hover > .card__image-container::before {
-  background-color: #ebf0ee20;
-}
-
-.card__image {
-  object-fit: cover;
-  height: 250px;
-}
-
-.card__content {
-  padding: 1rem;
-  border-radius: var(--border-radius);
-  background-color: #fff;
-  translate: 0 -10px;
-}
-
-.card__title {
-  color: #3a4a42;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.card__technologies {
-  color: #3a4a42;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-left: 0;
-  list-style-type: none;
-  margin-block: 1rem;
-}
-
-.card__technologies li {
-  border-radius: var(--border-radius);
-  padding: 0.4rem 0.6rem;
-  font-weight: 500;
-  background-color: #ebf0ee;
-  color: #000;
-  width: max-content;
-}
-
-.card__button,
-.aboutme__resume,
-.footer__button {
-  font-size: 1.3rem;
-  background-color: #36b37f;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: var(--border-radius);
-  padding: 0.8rem 1rem;
-  display: block;
-  margin-inline: auto;
-  transition: box-shadow 250ms ease-in-out;
 }
 
 /*
