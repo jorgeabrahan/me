@@ -105,7 +105,7 @@ Toolbar (Header)
   align-items: center;
   justify-content: space-between;
   padding: var(--horizontal-spacing);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -156,7 +156,7 @@ Headline
 }
 
 .headline__title {
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .headline__title,
@@ -314,7 +314,7 @@ Headline
     gap: 2rem;
   }
   .headline__title {
-    margin-top: 10rem;
+    margin-top: 13rem;
     font-weight: 800;
   }
   .headline__description {
