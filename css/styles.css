@@ -57,6 +57,7 @@ button:active {
 :root {
   --horizontal-spacing: 1.1rem;
   --border-radius: 8px;
+  --max-width-layout: 1280px;
 }
 
 /*
@@ -95,7 +96,7 @@ Toolbar (Header)
     25px, 
     0px,
     700px 680px;
-  max-width: 1280px;
+  max-width: var(--max-width-layout);
   margin-inline: auto;
 
 }
@@ -223,9 +224,9 @@ My works section
 =====================================
 */
 
-.works {
+.works, .aboutme__cards {
   padding: 0 var(--horizontal-spacing);
-  max-width: 1280px;
+  max-width: var(--max-width-layout);
   margin-inline: auto;
 }
 
@@ -367,7 +368,6 @@ About me section
 }
 
 .aboutme__cards {
-  padding: 0 var(--horizontal-spacing);
   display: grid;
   gap: 1.5rem;
   margin-bottom: 5rem;
@@ -526,7 +526,7 @@ About me section
   =====================================
   */
 
-  .works__cards {
+  .works__cards, .aboutme__cards {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 
