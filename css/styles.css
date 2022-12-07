@@ -67,36 +67,36 @@ Toolbar (Header)
 
 .header {
   background-image: 
-    url("../img/decorators/headline/circle-lines.svg"), 
     url("../img/decorators/headline/rectangle.svg"), 
     url("../img/decorators/headline/cube-opacity.svg"), 
     url("../img/decorators/headline/cube.svg"), 
     url("../img/decorators/headline/cube-left.svg"), 
     url("../img/decorators/headline/cylinder.svg"), 
     url("../img/decorators/headline/cylinder-opacity.svg"),
-    url("../img/decorators/headline/pyramid.svg");
+    url("../img/decorators/headline/pyramid.svg"),
+    url("../img/decorators/headline/circle-lines.svg"); 
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: 
-    center 20%, 
     top 5% right -20%, 
     top 25% left 5%, 
     top 40% right -50%, 
     bottom 25% left -8%, 
     bottom 10% right, 
     bottom 30% left 40%,
-    top 0 left -500%;
+    top 0 left -500%,
+    center 20%;
   background-size: 
-    700px 680px, 
     110px, 
     30px, 
     150px, 
     80px, 
     50px, 
     25px, 
-    0px;
-    max-width: 1280px;
-    margin-inline: auto;
+    0px,
+    700px 680px;
+  max-width: 1280px;
+  margin-inline: auto;
 
 }
 
@@ -159,28 +159,29 @@ Headline
   margin-top: 7rem;
 }
 
-.headline__title,
-.works__title,
-.aboutme__title,
-.footer__title {
+.title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
 }
 
-.title__name,
-.works__title,
-.aboutme__title,
-.footer__title {
+.clr-blue {
   color: #172b4d;
 }
 
-.title__role {
+.clr-green {
   color: #36b37e;
 }
 
-.headline__description,
-.aboutme__description {
+.center {
+  text-align: center;
+}
+
+.title-mb {
+  margin-bottom: 1rem;
+}
+
+.description {
   font-size: 1.2rem;
   color: #172b4d;
 }
@@ -266,24 +267,24 @@ Headline
   =====================================
   */
   .header {
-    background-position: 
-      top 45% center, 
+    background-position:  
       top -8% right 20%, 
       top 10% left 35%, 
       top 20% right -5%, 
       bottom 20% left 10%, 
       bottom 18% right 18%, 
       bottom 30% left 40%,
-      top 10% left -10%;
+      top 10% left -10%,
+      top 45% center;
     background-size: 
-      1500px 1000px, 
       130px, 
       50px, 
       200px, 
       125px, 
       190px, 
       130px,
-      150px;
+      150px,
+      1500px 1000px;
   }
   .toolbar {
     justify-content: center;
@@ -328,47 +329,47 @@ Headline
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header {
-    background-position: 
-      top 65% center, 
+    background-position:  
       top -8% right 25%, 
       top 10% left 35%, 
       top 20% right -5%, 
       bottom 20% left 10%,
       bottom 18% right 18%, 
       bottom 30% left 40%,
-      top 25% left 5%;
+      top 25% left 5%,
+      top 65% center;
     background-size: 
-      1600px 1300px, 
       130px, 
       50px, 
       280px, 
       125px, 
       190px, 
       130px,
-      160px;
+      160px,
+      1600px 1300px;
   }
 }
 
 @media (min-width: 1280px) {
   .header {
     background-position: 
-      top 65% center, 
       top -8% right 25%, 
       top 10% left 35%, 
       top 20% right 0%, 
       bottom 20% left 10%,
       bottom 18% right 18%, 
       bottom 30% left 40%,
-      top 25% left 5%;
+      top 25% left 5%,
+      top 65% center;
     background-size: 
-      1600px 1300px, 
       130px, 
       50px, 
       280px, 
       125px, 
       190px, 
       130px,
-      160px;
+      160px,
+      1600px 1300px;
   }
 }
 
@@ -380,12 +381,6 @@ My works section
 
 .works {
   padding: 0 var(--horizontal-spacing);
-}
-
-.works__title,
-.aboutme__title {
-  text-align: center;
-  margin-bottom: 1rem;
 }
 
 .works__title-underline {
@@ -591,7 +586,6 @@ Footer
 }
 
 .footer__title {
-  text-align: center;
   margin-bottom: 4rem;
 }
 
