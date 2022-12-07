@@ -152,7 +152,8 @@ Headline
 
 .headline__title,
 .works__title,
-.aboutme__title {
+.aboutme__title,
+.footer__title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
@@ -160,7 +161,8 @@ Headline
 
 .title__name,
 .works__title,
-.aboutme__title {
+.aboutme__title,
+.footer__title {
   color: #172b4d;
 }
 
@@ -177,6 +179,7 @@ Headline
 .headline__social {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   gap: 1.2rem;
   list-style-type: none;
   padding-left: 0;
@@ -300,7 +303,8 @@ My works section
 }
 
 .card__button,
-.aboutme__resume {
+.aboutme__resume,
+.footer__button {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -344,12 +348,14 @@ About me section
 }
 
 .card__button:hover,
-.aboutme__resume:hover {
+.aboutme__resume:hover,
+.footer__button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .card__button:active,
-.aboutme__resume:active {
+.aboutme__resume:active,
+.footer__button:active {
   background-color: #008552;
 }
 
@@ -401,4 +407,54 @@ About me section
   border-radius: var(--border-radius);
   letter-spacing: 0.03em;
   color: #36b37e;
+}
+
+/*
+=====================================
+Footer
+=====================================
+*/
+
+.footer {
+  padding: 0 var(--horizontal-spacing);
+  background-image: url("../img/decorators/footer/column.png");
+  background-repeat: no-repeat;
+  background-position: 130% 95%;
+  background-size: 140px;
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer__form :is(input, textarea) {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 2px solid #dbe2de;
+  outline: none;
+  resize: none;
+}
+
+.footer__form :is(input:focus, textarea:focus) {
+  border: 2px solid #71c7a1;
+}
+
+.footer__social {
+  margin: 3rem 0 1rem;
+}
+
+.footer__mail {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #42526e;
+  margin-bottom: 4rem;
 }
