@@ -182,6 +182,8 @@ Headline
 }
 
 .description {
+  max-width: 800px;
+  margin-inline: auto;
   font-size: 1.2rem;
   color: #172b4d;
 }
@@ -309,9 +311,7 @@ My works section
   width: max-content;
 }
 
-.card__button,
-.aboutme__resume,
-.footer__button {
+.button {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -322,169 +322,6 @@ My works section
   display: block;
   margin-inline: auto;
   transition: box-shadow 250ms ease-in-out;
-}
-
-@media (max-width: 768px) {
-  /*
-  =====================================
-  Toolbar (Header)
-  =====================================
-  */
-  .toolbar {
-    background-color: #fff;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  }
-  .toolbar__menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
-    transition: translate 350ms ease-in-out;
-    translate: -100%;
-  }
-
-  .menu__list {
-    margin-top: 5rem;
-  }
-
-  .menu__item {
-    line-height: 4rem;
-  }
-
-  .menu__link {
-    font-size: 2rem;
-  }
-
-  /*
-  =====================================
-  Headline
-  =====================================
-  */
-
-  .headline {
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 768px) {
-  /*
-  =====================================
-  Toolbar (Header)
-  =====================================
-  */
-  .header {
-    background-position:  
-      top -8% right 20%, 
-      top 10% left 35%, 
-      top 20% right -5%, 
-      bottom 20% left 10%, 
-      bottom 18% right 18%, 
-      bottom 30% left 40%,
-      top 10% left -10%,
-      top 45% center;
-    background-size: 
-      130px, 
-      50px, 
-      200px, 
-      125px, 
-      190px, 
-      130px,
-      150px,
-      1500px 1000px;
-  }
-  .toolbar {
-    justify-content: center;
-  }
-  .toolbar__title, .toolbar__btn {
-    display: none;
-  }
-  .menu__list {
-    display: flex;
-    gap: 1.8rem;
-  }
-  .menu__link {
-    color: #344563;
-  }
-
-  /*
-  =====================================
-  Headline
-  =====================================
-  */
-
-  .headline {
-    gap: 2rem;
-  }
-  .headline__title {
-    margin-top: 13rem;
-    font-weight: 800;
-  }
-  .headline__description {
-    max-width: 768px;
-    margin-inline: auto;
-  }
-  .headline__social {
-    margin-bottom: 4rem;
-  }
-
-  /*
-  =====================================
-  My works section
-  =====================================
-  */
-
-  .works__cards {
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .header {
-    background-position:  
-      top -8% right 25%, 
-      top 10% left 35%, 
-      top 20% right -5%, 
-      bottom 20% left 10%,
-      bottom 18% right 18%, 
-      bottom 30% left 40%,
-      top 25% left 5%,
-      top 65% center;
-    background-size: 
-      130px, 
-      50px, 
-      280px, 
-      125px, 
-      190px, 
-      130px,
-      160px,
-      1600px 1300px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header {
-    background-position: 
-      top -8% right 25%, 
-      top 10% left 35%, 
-      top 20% right 0%, 
-      bottom 20% left 10%,
-      bottom 18% right 18%, 
-      bottom 30% left 40%,
-      top 25% left 5%,
-      top 65% center;
-    background-size: 
-      130px, 
-      50px, 
-      280px, 
-      125px, 
-      190px, 
-      130px,
-      160px,
-      1600px 1300px;
-  }
 }
 
 /*
@@ -499,9 +336,13 @@ About me section
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../img/decorators/about_me/origami-bird.png"), url("../img/decorators/about_me/origami-ship.png");
-  background-position: 115% 8%, -25% 84%;
-  background-size: 120px, 140px;
+  background-image: url("../img/decorators/about_me/bird.svg"), url("../img/decorators/about_me/ship.svg");
+  background-position: 
+    top 5% right -25%,
+    bottom 20% left -20%; 
+  background-size: 
+    140px, 
+    140px;
   background-repeat: no-repeat;
 }
 
@@ -517,15 +358,11 @@ About me section
   margin-block: 1rem;
 }
 
-.card__button:hover,
-.aboutme__resume:hover,
-.footer__button:hover {
+.button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.card__button:active,
-.aboutme__resume:active,
-.footer__button:active {
+.button:active {
   background-color: #008552;
 }
 
@@ -577,6 +414,191 @@ About me section
   border-radius: var(--border-radius);
   letter-spacing: 0.03em;
   color: #36b37e;
+}
+
+@media (max-width: 768px) {
+  /*
+  =====================================
+  Toolbar (Header)
+  =====================================
+  */
+
+  .toolbar {
+    background-color: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  }
+  .toolbar__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+    transition: translate 350ms ease-in-out;
+    translate: -100%;
+  }
+
+  .menu__list {
+    margin-top: 5rem;
+  }
+
+  .menu__item {
+    line-height: 4rem;
+  }
+
+  .menu__link {
+    font-size: 2rem;
+  }
+
+  /*
+  =====================================
+  Headline
+  =====================================
+  */
+
+  .headline {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  /*
+  =====================================
+  Toolbar (Header)
+  =====================================
+  */
+
+  .header {
+    background-position:  
+      top -8% right 20%, 
+      top 10% left 35%, 
+      top 20% right -5%, 
+      bottom 20% left 10%, 
+      bottom 18% right 18%, 
+      bottom 30% left 40%,
+      top 10% left -10%,
+      top 45% center;
+    background-size: 
+      130px, 
+      50px, 
+      200px, 
+      125px, 
+      190px, 
+      130px,
+      150px,
+      1500px 1000px;
+  }
+  .toolbar {
+    justify-content: center;
+  }
+  .toolbar__title, .toolbar__btn {
+    display: none;
+  }
+  .menu__list {
+    display: flex;
+    gap: 1.8rem;
+  }
+  .menu__link {
+    color: #344563;
+  }
+
+  /*
+  =====================================
+  Headline
+  =====================================
+  */
+
+  .headline {
+    gap: 2rem;
+  }
+  .headline__title {
+    margin-top: 13rem;
+    font-weight: 800;
+  }
+  .headline__social {
+    margin-bottom: 4rem;
+  }
+
+  /*
+  =====================================
+  My works section
+  =====================================
+  */
+
+  .works__cards {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
+
+  /*
+  =====================================
+  About me section
+  =====================================
+  */
+
+  .aboutme__header {
+    background-position: 
+      top -5% right 0%,
+      bottom 20% left 0%; 
+    background-size: 
+      240px, 
+      240px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .header {
+    background-position:  
+      top -8% right 25%, 
+      top 10% left 35%, 
+      top 20% right -5%, 
+      bottom 20% left 10%,
+      bottom 18% right 18%, 
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
+    background-size: 
+      130px, 
+      50px, 
+      280px, 
+      125px, 
+      190px, 
+      130px,
+      160px,
+      1600px 1300px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    background-position: 
+      top -8% right 25%, 
+      top 10% left 35%, 
+      top 20% right 0%, 
+      bottom 20% left 10%,
+      bottom 18% right 18%, 
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
+    background-size: 
+      130px, 
+      50px, 
+      280px, 
+      125px, 
+      190px, 
+      130px,
+      160px,
+      1600px 1300px;
+  }
+  .aboutme__header {
+    gap: 1rem;
+    background-position: 
+      top 10% right -5%,
+      bottom 40% left -5%; 
+    background-size: 
+      300px, 
+      300px;
+  }
 }
 
 /*
