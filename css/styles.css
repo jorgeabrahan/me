@@ -214,10 +214,10 @@ Headline
 
 @keyframes move-link {
   from {
-    transform: translate(0, 15rem);
+    transform: translateY(15rem);
   }
   to {
-    transform: translate(0, 0);
+    transform: translateY(0);
   }
 }
 
