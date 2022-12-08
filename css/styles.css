@@ -67,38 +67,37 @@ Toolbar (Header)
 */
 
 .header {
-  background-image: 
-    url("../img/decorators/headline/rectangle.svg"), 
-    url("../img/decorators/headline/cube-opacity.svg"), 
-    url("../img/decorators/headline/cube.svg"), 
-    url("../img/decorators/headline/cube-left.svg"), 
-    url("../img/decorators/headline/cylinder.svg"), 
+  background-image:
+    url("../img/decorators/headline/rectangle.svg"),
+    url("../img/decorators/headline/cube-opacity.svg"),
+    url("../img/decorators/headline/cube.svg"),
+    url("../img/decorators/headline/cube-left.svg"),
+    url("../img/decorators/headline/cylinder.svg"),
     url("../img/decorators/headline/cylinder-opacity.svg"),
     url("../img/decorators/headline/pyramid.svg"),
-    url("../img/decorators/headline/circle-lines.svg"); 
+    url("../img/decorators/headline/circle-lines.svg");
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-position: 
-    top 5% right -20%, 
-    top 25% left 5%, 
-    top 40% right -50%, 
-    bottom 25% left -8%, 
-    bottom 10% right, 
+  background-position:
+    top 5% right -20%,
+    top 25% left 5%,
+    top 40% right -50%,
+    bottom 25% left -8%,
+    bottom 10% right,
     bottom 30% left 40%,
     top 0 left -500%,
     center 20%;
-  background-size: 
-    110px, 
-    30px, 
-    150px, 
-    80px, 
-    50px, 
-    25px, 
+  background-size:
+    110px,
+    30px,
+    150px,
+    80px,
+    50px,
+    25px,
     0,
     700px 680px;
   max-width: var(--max-width-layout);
   margin-inline: auto;
-
 }
 
 .toolbar {
@@ -224,7 +223,9 @@ My works section
 =====================================
 */
 
-.works, .aboutme__cards, .footer__grid {
+.works,
+.aboutme__cards,
+.footer__grid {
   padding: 0 var(--horizontal-spacing);
   max-width: var(--max-width-layout);
   margin-inline: auto;
@@ -239,7 +240,8 @@ My works section
   margin-bottom: 3.5rem;
 }
 
-.works__cards, .footer__grid {
+.works__cards,
+.footer__grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -341,11 +343,11 @@ About me section
   flex-direction: column;
   justify-content: center;
   background-image: url("../img/decorators/about_me/bird.svg"), url("../img/decorators/about_me/ship.svg");
-  background-position: 
+  background-position:
     top 5% right -25%,
-    bottom 20% left -20%; 
-  background-size: 
-    140px, 
+    bottom 20% left -20%;
+  background-size:
+    140px,
     140px;
   background-repeat: no-repeat;
 }
@@ -427,21 +429,21 @@ Footer
 
 .footer {
   padding: 0 var(--horizontal-spacing);
-  background-image: 
-    url("../img/decorators/footer/column.png"), 
-    url("../img/decorators/footer/column.svg"), 
+  background-image:
+    url("../img/decorators/footer/column.png"),
+    url("../img/decorators/footer/column.svg"),
     url("../img/decorators/footer/rock.svg"),
     url("../img/decorators/footer/rectangle.svg");
   background-repeat: no-repeat;
-  background-position: 
-    bottom 0 right -30%, 
-    200% 0, 
-    200% 0, 
-    200% 0; 
-  background-size: 
-    140px, 
-    0, 
-    0, 
+  background-position:
+    bottom 0 right -30%,
+    200% 0,
+    200% 0,
+    200% 0;
+  background-size:
+    140px,
+    0,
+    0,
     0;
 }
 
@@ -484,7 +486,6 @@ Footer
   margin-bottom: 4rem;
 }
 
-
 @media (max-width: 768px) {
   /*
   =====================================
@@ -496,6 +497,7 @@ Footer
     background-color: #fff;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   }
+
   .toolbar__menu {
     position: absolute;
     top: 0;
@@ -539,35 +541,40 @@ Footer
   */
 
   .header {
-    background-position:  
-      top -8% right 20%, 
-      top 10% left 35%, 
-      top 20% right -5%, 
-      bottom 20% left 10%, 
-      bottom 18% right 18%, 
+    background-position:
+      top -8% right 20%,
+      top 10% left 35%,
+      top 20% right -5%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
       bottom 30% left 40%,
       top 10% left -10%,
       top 45% center;
-    background-size: 
-      130px, 
-      50px, 
-      200px, 
-      125px, 
-      190px, 
+    background-size:
+      130px,
+      50px,
+      200px,
+      125px,
+      190px,
       130px,
       150px,
       1500px 1000px;
   }
+
   .toolbar {
     justify-content: center;
   }
-  .toolbar__title, .toolbar__btn {
+
+  .toolbar__title,
+  .toolbar__btn {
     display: none;
   }
+
   .menu__list {
     display: flex;
     gap: 1.8rem;
   }
+
   .menu__link {
     color: #344563;
   }
@@ -581,10 +588,12 @@ Footer
   .headline {
     gap: 2rem;
   }
+
   .headline__title {
     margin-top: 13rem;
     font-weight: 800;
   }
+
   .headline__social {
     margin-bottom: 4rem;
   }
@@ -595,7 +604,9 @@ Footer
   =====================================
   */
 
-  .works__cards, .aboutme__cards, .footer__grid {
+  .works__cards,
+  .aboutme__cards,
+  .footer__grid {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 
@@ -606,11 +617,11 @@ Footer
   */
 
   .aboutme__header {
-    background-position: 
+    background-position:
       top -5% right 0%,
-      bottom 20% left 0%; 
-    background-size: 
-      240px, 
+      bottom 20% left 0%;
+    background-size:
+      240px,
       240px;
   }
 
@@ -637,21 +648,21 @@ Footer
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header {
-    background-position:  
-      top -8% right 25%, 
-      top 10% left 35%, 
-      top 20% right -5%, 
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right -5%,
       bottom 20% left 10%,
-      bottom 18% right 18%, 
+      bottom 18% right 18%,
       bottom 30% left 40%,
       top 25% left 5%,
       top 65% center;
-    background-size: 
-      130px, 
-      50px, 
-      280px, 
-      125px, 
-      190px, 
+    background-size:
+      130px,
+      50px,
+      280px,
+      125px,
+      190px,
       130px,
       160px,
       1600px 1300px;
@@ -660,45 +671,46 @@ Footer
 
 @media (min-width: 1280px) {
   .header {
-    background-position: 
-      top -8% right 25%, 
-      top 10% left 35%, 
-      top 20% right 0%, 
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right 0%,
       bottom 20% left 10%,
-      bottom 18% right 18%, 
+      bottom 18% right 18%,
       bottom 30% left 40%,
       top 25% left 5%,
       top 65% center;
-    background-size: 
-      130px, 
-      50px, 
-      280px, 
-      125px, 
-      190px, 
+    background-size:
+      130px,
+      50px,
+      280px,
+      125px,
+      190px,
       130px,
       160px,
       1600px 1300px;
   }
+
   .aboutme__header {
     gap: 1rem;
-    background-position: 
+    background-position:
       top 10% right -5%,
-      bottom 40% left -5%; 
-    background-size: 
-      300px, 
+      bottom 40% left -5%;
+    background-size:
+      300px,
       300px;
   }
 
   .footer {
-    background-position: 
-      bottom 0 right -30%, 
-      bottom 20% right -13%, 
-      bottom 20% left 23%, 
-      left -6% bottom 5%; 
-    background-size: 
-      140px, 
-      300px, 
-      120px, 
+    background-position:
+      bottom 0 right -30%,
+      bottom 20% right -13%,
+      bottom 20% left 23%,
+      left -6% bottom 5%;
+    background-size:
+      140px,
+      300px,
+      120px,
       200px;
   }
 
