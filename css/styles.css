@@ -209,6 +209,16 @@ Headline
   border-radius: 50%;
   display: flex;
   align-content: center;
+  animation: 3s ease move-link forwards;
+}
+
+@keyframes move-link {
+  from {
+    transform: translate(0, 15rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 .headline__link span {
