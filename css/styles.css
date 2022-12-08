@@ -57,6 +57,7 @@ button:active {
 :root {
   --horizontal-spacing: 1.1rem;
   --border-radius: 8px;
+  --max-width-layout: 1280px;
 }
 
 /*
@@ -65,18 +66,50 @@ Toolbar (Header)
 =====================================
 */
 
+.header {
+  background-image:
+    url("../img/decorators/headline/rectangle.svg"),
+    url("../img/decorators/headline/cube-opacity.svg"),
+    url("../img/decorators/headline/cube.svg"),
+    url("../img/decorators/headline/cube-left.svg"),
+    url("../img/decorators/headline/cylinder.svg"),
+    url("../img/decorators/headline/cylinder-opacity.svg"),
+    url("../img/decorators/headline/pyramid.svg"),
+    url("../img/decorators/headline/circle-lines.svg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position:
+    top 5% right -20%,
+    top 25% left 5%,
+    top 40% right -50%,
+    bottom 25% left -8%,
+    bottom 10% right,
+    bottom 30% left 40%,
+    top 0 left -500%,
+    center 20%;
+  background-size:
+    110px,
+    30px,
+    150px,
+    80px,
+    50px,
+    25px,
+    0,
+    700px 680px;
+  max-width: var(--max-width-layout);
+  margin-inline: auto;
+}
+
 .toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--horizontal-spacing);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
   z-index: 50;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .toolbar__title {
@@ -96,33 +129,15 @@ Toolbar (Header)
   font-size: 1.8rem;
 }
 
-.toolbar__menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 1rem;
-  background-color: #fff;
-  transition: translate 350ms ease-in-out;
-  translate: -100%;
-}
-
 .menu__list {
   list-style-type: none;
-  margin-top: 5rem;
-  padding: 0;
-}
-
-.menu__item {
-  line-height: 4rem;
+  padding-left: 0;
 }
 
 .menu__link {
   text-decoration: none;
   color: #3a4a42;
   font-weight: 600;
-  font-size: 2rem;
 }
 
 /*
@@ -137,46 +152,43 @@ Headline
   height: 110vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-image: url("../img/decorators/headline/circle-lines.png"), url("../img/decorators/headline/rectangle.png"), url("../img/decorators/headline/cube.png"), url("../img/decorators/headline/cube-incomplete.png"), url("../img/decorators/headline/cube-left.png"), url("../img/decorators/headline/cylinder.png"), url("../img/decorators/headline/small-cylinder.png");
-  background-repeat: no-repeat;
-  background-position: 50% 20%, 125% 0, 2% 21%, 172% 38%, -11% 75%, 102% 94%, 44% 71%;
-  background-size: 700px 680px, 130px, 35px, 180px, 80px, 60px, 25px;
   position: relative;
-  overflow-x: hidden;
 }
 
 .headline__title {
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
-.headline__title,
-.works__title,
-.aboutme__title,
-.footer__title {
+.title {
   font-size: 2.8rem;
   line-height: 3.3rem;
   font-weight: 700;
 }
 
-.title__name,
-.works__title,
-.aboutme__title,
-.footer__title {
+.clr-blue {
   color: #172b4d;
 }
 
-.title__role {
+.clr-green {
   color: #36b37e;
 }
 
-.headline__description,
-.aboutme__description {
+.center {
+  text-align: center;
+}
+
+.title-mb {
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 800px;
+  margin-inline: auto;
   font-size: 1.2rem;
   color: #172b4d;
 }
 
-.headline__social {
+.social {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -211,14 +223,12 @@ My works section
 =====================================
 */
 
-.works {
+.works,
+.aboutme__cards,
+.footer__grid {
   padding: 0 var(--horizontal-spacing);
-}
-
-.works__title,
-.aboutme__title {
-  text-align: center;
-  margin-bottom: 1rem;
+  max-width: var(--max-width-layout);
+  margin-inline: auto;
 }
 
 .works__title-underline {
@@ -230,9 +240,13 @@ My works section
   margin-bottom: 3.5rem;
 }
 
-.works__cards {
+.works__cards,
+.footer__grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.works__cards {
   margin-bottom: 1.5rem;
 }
 
@@ -253,7 +267,7 @@ My works section
   top: 0;
   left: 0;
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   content: "";
   background-color: #ebf0eea7;
   transition: background-color 400ms ease-in-out;
@@ -266,6 +280,7 @@ My works section
 .card__image {
   object-fit: cover;
   height: 250px;
+  width: 100%;
 }
 
 .card__content {
@@ -302,9 +317,7 @@ My works section
   width: max-content;
 }
 
-.card__button,
-.aboutme__resume,
-.footer__button {
+.button {
   font-size: 1.3rem;
   background-color: #36b37f;
   color: #fff;
@@ -329,9 +342,13 @@ About me section
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../img/decorators/about_me/origami-bird.png"), url("../img/decorators/about_me/origami-ship.png");
-  background-position: 115% 8%, -25% 84%;
-  background-size: 120px, 140px;
+  background-image: url("../img/decorators/about_me/bird.svg"), url("../img/decorators/about_me/ship.svg");
+  background-position:
+    top 5% right -25%,
+    bottom 20% left -20%;
+  background-size:
+    140px,
+    140px;
   background-repeat: no-repeat;
 }
 
@@ -347,20 +364,15 @@ About me section
   margin-block: 1rem;
 }
 
-.card__button:hover,
-.aboutme__resume:hover,
-.footer__button:hover {
+.button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.card__button:active,
-.aboutme__resume:active,
-.footer__button:active {
+.button:active {
   background-color: #008552;
 }
 
 .aboutme__cards {
-  padding: 0 var(--horizontal-spacing);
   display: grid;
   gap: 1.5rem;
   margin-bottom: 5rem;
@@ -417,14 +429,29 @@ Footer
 
 .footer {
   padding: 0 var(--horizontal-spacing);
-  background-image: url("../img/decorators/footer/column.png");
+  background-image:
+    url("../img/decorators/footer/column.png"),
+    url("../img/decorators/footer/column.svg"),
+    url("../img/decorators/footer/rock.svg"),
+    url("../img/decorators/footer/rectangle.svg");
   background-repeat: no-repeat;
-  background-position: 130% 95%;
-  background-size: 140px;
+  background-position:
+    bottom 0 right -30%,
+    200% 0,
+    200% 0,
+    200% 0;
+  background-size:
+    140px,
+    0,
+    0,
+    0;
+}
+
+.footer__grid {
+  margin-bottom: 15rem;
 }
 
 .footer__title {
-  text-align: center;
   margin-bottom: 4rem;
 }
 
@@ -457,4 +484,245 @@ Footer
   text-decoration: none;
   color: #42526e;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  /*
+  =====================================
+  Toolbar (Header)
+  =====================================
+  */
+
+  .toolbar {
+    background-color: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  .toolbar__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+    transition: translate 350ms ease-in-out;
+    translate: -100%;
+  }
+
+  .menu__list {
+    margin-top: 5rem;
+  }
+
+  .menu__item {
+    line-height: 4rem;
+  }
+
+  .menu__link {
+    font-size: 2rem;
+  }
+
+  /*
+  =====================================
+  Headline
+  =====================================
+  */
+
+  .headline {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  /*
+  =====================================
+  Toolbar (Header)
+  =====================================
+  */
+
+  .header {
+    background-position:
+      top -8% right 20%,
+      top 10% left 35%,
+      top 20% right -5%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 10% left -10%,
+      top 45% center;
+    background-size:
+      130px,
+      50px,
+      200px,
+      125px,
+      190px,
+      130px,
+      150px,
+      1500px 1000px;
+  }
+
+  .toolbar {
+    justify-content: center;
+  }
+
+  .toolbar__title,
+  .toolbar__btn {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  .menu__link {
+    color: #344563;
+  }
+
+  /*
+  =====================================
+  Headline
+  =====================================
+  */
+
+  .headline {
+    gap: 2rem;
+  }
+
+  .headline__title {
+    margin-top: 13rem;
+    font-weight: 800;
+  }
+
+  .headline__social {
+    margin-bottom: 4rem;
+  }
+
+  /*
+  =====================================
+  My works section
+  =====================================
+  */
+
+  .works__cards,
+  .aboutme__cards,
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
+
+  /*
+  =====================================
+  About me section
+  =====================================
+  */
+
+  .aboutme__header {
+    background-position:
+      top -5% right 0%,
+      bottom 20% left 0%;
+    background-size:
+      240px,
+      240px;
+  }
+
+  /*
+  =====================================
+  Footer
+  =====================================
+  */
+
+  .footer__button {
+    margin-inline: 0;
+    width: max-content;
+  }
+
+  .footer__grid {
+    align-items: center;
+  }
+
+  .footer__title {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .header {
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right -5%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
+    background-size:
+      130px,
+      50px,
+      280px,
+      125px,
+      190px,
+      130px,
+      160px,
+      1600px 1300px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right 0%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
+    background-size:
+      130px,
+      50px,
+      280px,
+      125px,
+      190px,
+      130px,
+      160px,
+      1600px 1300px;
+  }
+
+  .aboutme__header {
+    gap: 1rem;
+    background-position:
+      top 10% right -5%,
+      bottom 40% left -5%;
+    background-size:
+      300px,
+      300px;
+  }
+
+  .footer {
+    background-position:
+      bottom 0 right -30%,
+      bottom 20% right -13%,
+      bottom 20% left 23%,
+      left -6% bottom 5%;
+    background-size:
+      140px,
+      300px,
+      120px,
+      200px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 500px 1fr;
+  }
+
+  .footer__social {
+    padding: 0.5rem;
+  }
+
+  .footer__mail {
+    display: none;
+  }
 }
