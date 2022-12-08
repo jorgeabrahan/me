@@ -209,6 +209,17 @@ Headline
   border-radius: 50%;
   display: flex;
   align-content: center;
+  animation: 3s ease move-link forwards;
+}
+
+@keyframes move-link {
+  from {
+    transform: translateY(15rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .headline__link span {
@@ -281,6 +292,12 @@ My works section
   object-fit: cover;
   height: 250px;
   width: 100%;
+  scale: 1;
+  transition: scale 500ms ease-in-out;
+}
+
+.card__image:hover {
+  scale: 1.25;
 }
 
 .card__content {
