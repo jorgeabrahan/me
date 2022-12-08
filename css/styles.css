@@ -216,6 +216,7 @@ Headline
   from {
     transform: translateY(15rem);
   }
+
   to {
     transform: translateY(0);
   }
