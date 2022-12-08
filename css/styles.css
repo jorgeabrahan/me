@@ -281,6 +281,12 @@ My works section
   object-fit: cover;
   height: 250px;
   width: 100%;
+  scale: 1;
+  transition: scale 500ms ease-in-out;
+}
+
+.card__image:hover {
+  scale: 1.25;
 }
 
 .card__content {
