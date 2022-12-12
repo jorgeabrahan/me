@@ -126,6 +126,7 @@ Toolbar (Header)
 }
 
 .toolbar__icon {
+  color: black;
   font-size: 1.8rem;
 }
 
