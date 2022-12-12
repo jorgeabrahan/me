@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Project isn't deployed yet but you can check how to [install it](#getting-started).
+- [https://jorgeabrahan.github.io/microverse_portfolio/](https://jorgeabrahan.github.io/microverse_portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +114,7 @@ There are no tests configured for this project.
 
 ### Deployment
 
-This project isn't deployed yet.
+You can deploy this project using GitHub pages if you're added as a collaborator in this repository
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
