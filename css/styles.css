@@ -160,44 +160,6 @@ Headline
   margin-top: 7rem;
 }
 
-.title {
-  font-size: 2.8rem;
-  line-height: 3.3rem;
-  font-weight: 700;
-}
-
-.clr-blue {
-  color: #172b4d;
-}
-
-.clr-green {
-  color: #36b37e;
-}
-
-.center {
-  text-align: center;
-}
-
-.title-mb {
-  margin-bottom: 1rem;
-}
-
-.description {
-  max-width: 800px;
-  margin-inline: auto;
-  font-size: 1.2rem;
-  color: #172b4d;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 1.2rem;
-  list-style-type: none;
-  padding-left: 0;
-}
-
 .headline__link-container {
   display: flex;
   justify-content: center;
@@ -743,4 +705,49 @@ Footer
   .footer__mail {
     display: none;
   }
+}
+
+
+/* 
+=====================================
+Utility Classes
+=====================================
+*/
+
+.title {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  font-weight: 700;
+}
+
+.title-mb {
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 1.2rem;
+  color: #172b4d;
+}
+
+.clr-blue {
+  color: #172b4d;
+}
+
+.clr-green {
+  color: #36b37e;
+}
+
+.center {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.2rem;
+  list-style-type: none;
+  padding-left: 0;
 }
