@@ -150,7 +150,7 @@ Headline
 .headline {
   padding: 0 var(--horizontal-spacing);
   text-align: center;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -493,7 +493,7 @@ Footer
 }
 
 .footer__social {
-  margin: 3rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer__mail {
@@ -737,7 +737,8 @@ Footer
   }
 
   .footer__social {
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0;
   }
 
   .footer__mail {
