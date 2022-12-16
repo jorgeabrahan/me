@@ -62,6 +62,81 @@ button:active {
 
 /*
 =====================================
+Utility classes
+=====================================
+*/
+
+.title {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  font-weight: 700;
+}
+
+.title-mb {
+  margin-bottom: 1rem;
+}
+
+.clr-blue {
+  color: #172b4d;
+}
+
+.clr-green {
+  color: #36b37e;
+}
+
+.center {
+  text-align: center;
+}
+
+.description {
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 1.2rem;
+  color: #172b4d;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.2rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.button {
+  font-size: 1.3rem;
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1rem;
+  display: block;
+  margin-inline: auto;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/*
+=====================================
 Toolbar (Header)
 =====================================
 */
@@ -150,7 +225,7 @@ Headline
 .headline {
   padding: 0 var(--horizontal-spacing);
   text-align: center;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -158,44 +233,6 @@ Headline
 
 .headline__title {
   margin-top: 7rem;
-}
-
-.title {
-  font-size: 2.8rem;
-  line-height: 3.3rem;
-  font-weight: 700;
-}
-
-.clr-blue {
-  color: #172b4d;
-}
-
-.clr-green {
-  color: #36b37e;
-}
-
-.center {
-  text-align: center;
-}
-
-.title-mb {
-  margin-bottom: 1rem;
-}
-
-.description {
-  max-width: 800px;
-  margin-inline: auto;
-  font-size: 1.2rem;
-  color: #172b4d;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 1.2rem;
-  list-style-type: none;
-  padding-left: 0;
 }
 
 .headline__link-container {
@@ -335,19 +372,6 @@ My works section
   width: max-content;
 }
 
-.button {
-  font-size: 1.3rem;
-  background-color: #36b37f;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: var(--border-radius);
-  padding: 0.8rem 1rem;
-  display: block;
-  margin-inline: auto;
-  transition: box-shadow 250ms ease-in-out;
-}
-
 /*
 =====================================
 About me section
@@ -380,14 +404,6 @@ About me section
   border-radius: var(--border-radius);
   width: max-content;
   margin-block: 1rem;
-}
-
-.button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.button:active {
-  background-color: #008552;
 }
 
 .aboutme__cards {
@@ -493,7 +509,7 @@ Footer
 }
 
 .footer__social {
-  margin: 3rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer__mail {
@@ -737,7 +753,8 @@ Footer
   }
 
   .footer__social {
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0;
   }
 
   .footer__mail {
