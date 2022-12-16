@@ -464,18 +464,18 @@ Footer
 .footer {
   padding: 0 var(--horizontal-spacing);
   background-image:
-    url("../img/decorators/footer/column.png"),
+    url("../img/decorators/footer/column-mobile.svg"),
     url("../img/decorators/footer/column.svg"),
     url("../img/decorators/footer/rock.svg"),
     url("../img/decorators/footer/rectangle.svg");
   background-repeat: no-repeat;
   background-position:
-    bottom 0 right -30%,
+    bottom 0 right 0,
     200% 0,
     200% 0,
     200% 0;
   background-size:
-    140px,
+    80px,
     0,
     0,
     0;

@@ -63,6 +63,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [https://jorgeabrahan.github.io/microverse_portfolio/](https://jorgeabrahan.github.io/microverse_portfolio/)
+- [video walkthrough](https://www.loom.com/share/a13cfb7e5af447908bf671eafd3e6cbe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
