@@ -10,19 +10,20 @@
         />
         <link rel="icon" href="img/portfolio_icon.png" />
         <link rel="stylesheet" href="css/styles.css" />
+        <script src="./js/navbar.js" defer></script>
     </head>
     <body>
         <header class="header">
             <section class="toolbar">
                 <p class="toolbar__title">JorGSA</p>
-                <nav class="toolbar__menu">
+                <nav class="toolbar__menu toolbar__menu--translate" id="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#works">Portfolio</a></li>
                         <li class="menu__item"><a class="menu__link" href="#about-me">About</a></li>
                         <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="toolbar__btn">
+                <button class="toolbar__btn" id="btnMenu">
                     <span class="material-symbols-outlined toolbar__icon">menu</span>
                 </button>
             </section>

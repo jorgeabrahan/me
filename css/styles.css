@@ -203,6 +203,7 @@ Toolbar (Header)
 .toolbar__icon {
   color: black;
   font-size: 1.8rem;
+  pointer-events: none;
 }
 
 .menu__list {
@@ -540,8 +541,12 @@ Footer
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
-    transition: translate 350ms ease-in-out;
-    translate: -100%;
+    transition: transform 350ms ease-in-out;
+    transform: translateX(0);
+  }
+
+  .toolbar__menu--translate {
+    transform: translateX(-100%);
   }
 
   .menu__list {
