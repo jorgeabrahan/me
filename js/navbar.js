@@ -19,3 +19,11 @@ const onMenuInteraction = () => {
 btnMenu.addEventListener("click", () => {
     onMenuInteraction();
 });
+
+const menuLinks = document.querySelectorAll(".menu__link");
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        onMenuInteraction();
+    });
+});
+
