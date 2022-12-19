@@ -544,7 +544,7 @@ Footer
     transition: transform 350ms ease-in-out;
     transform: translateX(0);
   }
-  
+
   .toolbar__menu--translate {
     transform: translateX(-100%);
   }
