@@ -84,7 +84,7 @@ const showWorksInfo = (work) => {
   });
   popupLinksCode.forEach((link) => {
     link.href = work.links.sourceCode;
-  }); 
+  });
 };
 
 const createWorkHTML = (work) => {
