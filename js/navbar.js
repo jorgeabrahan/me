@@ -14,6 +14,11 @@ const toggleIcon = (iconMenu) => {
 const onMenuInteraction = () => {
   menu.classList.toggle('toolbar__menu--translate');
   toggleIcon(iconMenu);
+  if (!menu.classList.contains('toolbar__menu--translate')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 };
 
 btnMenu.addEventListener('click', () => {
@@ -23,6 +28,29 @@ btnMenu.addEventListener('click', () => {
 const menuLinks = document.querySelectorAll('.menu__link');
 menuLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    onMenuInteraction();
+    if (window.innerWidth < 768) {
+      onMenuInteraction();
+    }
   });
 });
+
+const toolbar = document.getElementById('toolbar');
+const headlineTitle = document.querySelector('.headline__title');
+
+const observerOptions = {
+  rootMargin: '200px',
+  threshold: 1.0,
+};
+
+const onHeadlineObserverChange = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      toolbar.classList.remove('toolbar--fixed');
+    } else {
+      toolbar.classList.add('toolbar--fixed');
+    }
+  });
+};
+
+const headlineTitleObserver = new IntersectionObserver(onHeadlineObserverChange, observerOptions);
+headlineTitleObserver.observe(headlineTitle);
