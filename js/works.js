@@ -74,6 +74,17 @@ const popupLinksCode = popup.querySelectorAll('.popup__link--code');
 
 const showWorksInfo = (work) => {
   popup.style.display = 'block';
+  popupImg.src = work.img.src;
+  popupImg.alt = work.img.alt;
+  popupTitle.textContent = work.title;
+  popupTech.innerHTML = work.technologies.map((technology) => `<li>${technology}</li>`).join('');
+  popupDesc.textContent = work.description;
+  popupLinksDeploy.forEach((link) => {
+    link.href = work.links.liveVersion;
+  });
+  popupLinksCode.forEach((link) => {
+    link.href = work.links.sourceCode;
+  }); 
 };
 
 const createWorkHTML = (work) => {
