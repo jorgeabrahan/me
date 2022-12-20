@@ -688,6 +688,7 @@ Popup
     justify-content: space-between;
     gap: 0.5rem;
   }
+
   .popup__external--mobile a {
     flex: 1;
     justify-content: center;
