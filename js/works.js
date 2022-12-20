@@ -65,7 +65,14 @@ const myWorks = [
   },
 ];
 
-const showWorksInfo = () => {
+const popupImg = popup.querySelector('.popup__image');
+const popupTitle = popup.querySelector('.popup__title');
+const popupTech = popup.querySelector('.popup__technologies');
+const popupDesc = popup.querySelector('.popup__description');
+const popupLinksDeploy = popup.querySelectorAll('.popup__link--deploy');
+const popupLinksCode = popup.querySelectorAll('.popup__link--code');
+
+const showWorksInfo = (work) => {
   popup.style.display = 'block';
 };
 
@@ -90,7 +97,7 @@ const createWorkHTML = (work) => {
     </div>
   `;
   const btnWorks = workCnt.querySelector('.works__button');
-  btnWorks.addEventListener('click', showWorksInfo);
+  btnWorks.addEventListener('click', () => showWorksInfo(work));
   return workCnt;
 };
 
