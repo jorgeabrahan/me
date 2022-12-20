@@ -154,7 +154,7 @@ Toolbar (Header)
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position:
-    top 5% right -20%,
+    top 10% right -5%,
     top 25% left 5%,
     top 40% right -50%,
     bottom 25% left -8%,
@@ -163,7 +163,7 @@ Toolbar (Header)
     top 0 left -500%,
     center 20%;
   background-size:
-    110px,
+    90px,
     30px,
     150px,
     80px,
@@ -180,11 +180,16 @@ Toolbar (Header)
   align-items: center;
   justify-content: space-between;
   padding: var(--horizontal-spacing);
+  z-index: 50;
+}
+
+.toolbar--fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 50;
+  background: white;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .toolbar__title {
@@ -194,6 +199,8 @@ Toolbar (Header)
 }
 
 .toolbar__btn {
+  display: flex;
+  align-items: center;
   z-index: 150;
   background: none;
   outline: none;
@@ -203,6 +210,7 @@ Toolbar (Header)
 .toolbar__icon {
   color: black;
   font-size: 1.8rem;
+  font-weight: 600;
   pointer-events: none;
 }
 
@@ -529,12 +537,11 @@ Footer
   */
 
   .toolbar {
-    background-color: #fff;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    background: white;
   }
 
   .toolbar__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -543,6 +550,7 @@ Footer
     background-color: #fff;
     transition: transform 350ms ease-in-out;
     transform: translateX(0);
+    z-index: 100;
   }
 
   .toolbar__menu--translate {
@@ -572,7 +580,7 @@ Footer
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /*
   =====================================
   Toolbar (Header)
