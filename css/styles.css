@@ -181,13 +181,14 @@ Toolbar (Header)
   justify-content: space-between;
   padding: var(--horizontal-spacing);
   z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .toolbar--fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background: white;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
@@ -633,12 +634,14 @@ Footer
   .menu__underline {
     display: block;
     background-color: black;
-    transform: scale(0.7);
-    transition: transform 250ms ease-out;
+    width: 60%;
+    margin-inline: auto;
+    transition: width 250ms ease-out;
   }
 
   .menu__link:hover + .menu__underline {
-    transform: scale(1);
+    width: 100%;
+    /* transform: scale(1); */
   }
 
   /*
