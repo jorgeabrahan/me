@@ -225,6 +225,10 @@ Toolbar (Header)
   font-weight: 600;
 }
 
+.menu__underline {
+  display: none;
+}
+
 /*
 =====================================
 Headline
@@ -624,6 +628,17 @@ Footer
 
   .menu__link {
     color: #344563;
+  }
+
+  .menu__underline {
+    display: block;
+    background-color: black;
+    transform: scale(0.7);
+    transition: transform 250ms ease-out;
+  }
+
+  .menu__link:hover + .menu__underline {
+    transform: scale(1);
   }
 
   /*
