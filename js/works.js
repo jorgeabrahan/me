@@ -72,7 +72,7 @@ const createWorkHTML = (work) => {
     </figure>
     <div class="card__content">
         <h3 class="card__title">${work.title}</h3>
-        <ul class="card__technologies">
+        <ul class="technologies">
             ${work.technologies.map((technology) => `<li>${technology}</li>`).join('')}
         </ul>
         <button class="button">See project</button>

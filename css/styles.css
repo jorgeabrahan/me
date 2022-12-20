@@ -365,7 +365,7 @@ My works section
   text-align: center;
 }
 
-.card__technologies {
+.technologies {
   color: #3a4a42;
   display: flex;
   flex-wrap: wrap;
@@ -377,7 +377,11 @@ My works section
   margin-block: 1rem;
 }
 
-.card__technologies li {
+.technologies--left {
+  justify-content: start;
+}
+
+.technologies li {
   border-radius: var(--border-radius);
   padding: 0.4rem 0.6rem;
   font-weight: 500;
@@ -534,6 +538,74 @@ Footer
   margin-bottom: 4rem;
 }
 
+/*
+=====================================
+Popup
+=====================================
+*/
+
+.popup {
+  background-color: #1617174d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100vh;
+  padding: var(--horizontal-spacing);
+}
+
+.popup__bg {
+  background-color: white;
+  padding: var(--horizontal-spacing);
+  border-radius: 1rem;
+  height: 100%;
+  overflow-y: scroll;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.popup__image {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.popup__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.popup__description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-inline: 0;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.popup__external {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.popup__link {
+  background-color: #36B37F;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: max-content;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
   /*
   =====================================
@@ -582,6 +654,33 @@ Footer
 
   .headline {
     justify-content: space-around;
+  }
+
+  /*
+  =====================================
+  Popup
+  =====================================
+  */
+
+  .popup__header {
+    position: relative;
+  }
+
+  .popup__close {
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.7rem;
+  }
+
+  .popup__image {
+    max-height: 200px;
+  }
+
+  .popup__external--desktop {
+    display: none;
   }
 }
 
@@ -641,8 +740,6 @@ Footer
 
   .menu__link:hover + .menu__underline {
     width: 100%;
-
-    /* transform: scale(1); */
   }
 
   /*
@@ -709,6 +806,40 @@ Footer
   .footer__title {
     font-size: 2rem;
     line-height: 3.5rem;
+  }
+
+  /*
+  =====================================
+  Popup
+  =====================================
+  */
+
+  .popup__bg {
+    overflow-y: auto;
+  }
+
+  .popup__close {
+    display: flex;
+    background-color: #ebecf0;
+    color: #67798e;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+  }
+
+  .popup__image {
+    max-height: 400px;
+  }
+
+  .popup__external--mobile {
+    display: none;
+  }
+
+  .popup__main {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
