@@ -555,6 +555,7 @@ Popup
   width: 100%;
   height: 100vh;
   padding: var(--horizontal-spacing);
+  display: none;
 }
 
 .popup__bg {

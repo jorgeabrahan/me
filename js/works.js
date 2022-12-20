@@ -1,3 +1,10 @@
+const popup = document.getElementById('popup');
+const btnClosePopup = document.getElementById('btnClosePopup');
+
+btnClosePopup.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
 const myWorks = [
   {
     img: {
@@ -58,6 +65,10 @@ const myWorks = [
   },
 ];
 
+const showWorksInfo = () => {
+  popup.style.display = 'block';
+};
+
 const createWorkHTML = (work) => {
   const workCnt = document.createElement('div');
   workCnt.className = 'works__card';
@@ -75,9 +86,11 @@ const createWorkHTML = (work) => {
         <ul class="technologies">
             ${work.technologies.map((technology) => `<li>${technology}</li>`).join('')}
         </ul>
-        <button class="button">See project</button>
+        <button class="button works__button">See project</button>
     </div>
   `;
+  const btnWorks = workCnt.querySelector('.works__button');
+  btnWorks.addEventListener('click', showWorksInfo);
   return workCnt;
 };
 
