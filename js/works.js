@@ -12,14 +12,9 @@ const myWorks = [
       alt: 'Budget Calculator Website',
     },
     title: 'Budget Calculator',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: [
-      'html',
-      'css',
-      'JavaScript',
-      'Firebase',
-      'Authentication',
-    ],
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    technologies: ['html', 'css', 'JavaScript', 'Firebase', 'Authentication'],
     links: {
       liveVersion: 'https://budgtcalc.web.app/',
       sourceCode: 'https://github.com/jorgeabrahan/budgtcalc',
@@ -31,14 +26,9 @@ const myWorks = [
       alt: 'Clients Registry Website',
     },
     title: 'Clients Registry',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: [
-      'html',
-      'css',
-      'JavaScript',
-      'TypeScript',
-      'Authentication',
-    ],
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    technologies: ['html', 'css', 'JavaScript', 'TypeScript', 'Authentication'],
     links: {
       liveVersion: 'https://lives-tool.web.app/',
       sourceCode: 'https://github.com/jorgeabrahan/regclients',
@@ -50,14 +40,9 @@ const myWorks = [
       alt: 'Digital Watch Website',
     },
     title: 'Digital Watch',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: [
-      'html',
-      'css',
-      'JavaScript',
-      'Firebase',
-      'ReactJS',
-    ],
+    description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    technologies: ['html', 'css', 'JavaScript', 'Firebase', 'ReactJS'],
     links: {
       liveVersion: 'https://watch-js.web.app/',
       sourceCode: 'https://github.com/jorgeabrahan/watch',
