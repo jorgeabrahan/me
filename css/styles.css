@@ -135,6 +135,10 @@ Utility classes
   white-space: nowrap;
 }
 
+.d-none {
+  display: none;
+}
+
 /*
 =====================================
 Toolbar (Header)
