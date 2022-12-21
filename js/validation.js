@@ -19,4 +19,12 @@ const showMessage = (isError, message) => {
 
 frmContact.addEventListener('submit', (e) => {
   e.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    showMessage(false, 'Form validation succeeded.');
+    frmContact.submit();
+    return;
+  }
+
+  showMessage(true, err.EMAIL_LOWERCASE);
+
 });
