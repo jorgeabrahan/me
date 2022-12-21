@@ -26,5 +26,4 @@ frmContact.addEventListener('submit', (e) => {
   }
 
   showMessage(true, err.EMAIL_LOWERCASE);
-
 });
