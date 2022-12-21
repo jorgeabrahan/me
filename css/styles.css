@@ -135,6 +135,10 @@ Utility classes
   white-space: nowrap;
 }
 
+.d-none {
+  display: none;
+}
+
 /*
 =====================================
 Toolbar (Header)
@@ -510,7 +514,7 @@ Footer
 .footer__form {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
 .footer__form :is(input, textarea) {
@@ -536,6 +540,18 @@ Footer
   text-decoration: none;
   color: #42526e;
   margin-bottom: 4rem;
+}
+
+.form__message {
+  font-weight: 600;
+}
+
+.form__error {
+  color: #ff6163;
+}
+
+.form__valid {
+  color: #36b37e;
 }
 
 /*
