@@ -1,6 +1,6 @@
 const frmContact = document.getElementById('frmContact');
 const frmMessage = document.querySelector('.form__message');
-const { email } = frmContact.elements;
+const { name, email, description } = frmContact.elements;
 const err = {
   EMAIL_LOWERCASE: 'Email address should be lower case.',
 };
@@ -26,4 +26,20 @@ frmContact.addEventListener('submit', (e) => {
   }
 
   showMessage(true, err.EMAIL_LOWERCASE);
+});
+
+const formValues = {
+  name: '',
+  email: '',
+  desc: '',
+};
+
+name.addEventListener('input', () => {
+  formValues.name = name.value;
+});
+email.addEventListener('input', () => {
+  formValues.email = email.value;
+});
+description.addEventListener('input', () => {
+  formValues.desc = description.value;
 });
