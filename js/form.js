@@ -34,6 +34,14 @@ const formValues = JSON.parse(localStorage.getItem('contactForm')) || {
   desc: '',
 };
 
+const loadInputValuesStored = () => {
+  name.value = formValues.name;
+  email.value = formValues.email;
+  description.value = formValues.desc;
+};
+
+loadInputValuesStored();
+
 const saveOnLocalStorage = () => {
   localStorage.setItem('contactForm', JSON.stringify(formValues));
 };
