@@ -28,7 +28,7 @@ frmContact.addEventListener('submit', (e) => {
   showMessage(true, err.EMAIL_LOWERCASE);
 });
 
-const formValues = {
+const formValues = JSON.parse(localStorage.getItem('contactForm')) || {
   name: '',
   email: '',
   desc: '',
