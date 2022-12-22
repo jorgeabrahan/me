@@ -34,12 +34,19 @@ const formValues = {
   desc: '',
 };
 
+const saveOnLocalStorage = () => {
+  localStorage.setItem('contactForm', JSON.stringify(formValues));
+};
+
 name.addEventListener('input', () => {
   formValues.name = name.value;
+  saveOnLocalStorage();
 });
 email.addEventListener('input', () => {
   formValues.email = email.value;
+  saveOnLocalStorage();
 });
 description.addEventListener('input', () => {
   formValues.desc = description.value;
+  saveOnLocalStorage();
 });
