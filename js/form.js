@@ -1,6 +1,6 @@
 const frmContact = document.getElementById('frmContact');
 const frmMessage = document.querySelector('.form__message');
-const { email } = frmContact.elements;
+const { name, email, description } = frmContact.elements;
 const err = {
   EMAIL_LOWERCASE: 'Email address should be lower case.',
 };
@@ -26,4 +26,35 @@ frmContact.addEventListener('submit', (e) => {
   }
 
   showMessage(true, err.EMAIL_LOWERCASE);
+});
+
+const formValues = JSON.parse(localStorage.getItem('contactForm')) || {
+  name: '',
+  email: '',
+  desc: '',
+};
+
+const loadInputValuesStored = () => {
+  name.value = formValues.name;
+  email.value = formValues.email;
+  description.value = formValues.desc;
+};
+
+loadInputValuesStored();
+
+const saveOnLocalStorage = () => {
+  localStorage.setItem('contactForm', JSON.stringify(formValues));
+};
+
+name.addEventListener('input', () => {
+  formValues.name = name.value;
+  saveOnLocalStorage();
+});
+email.addEventListener('input', () => {
+  formValues.email = email.value;
+  saveOnLocalStorage();
+});
+description.addEventListener('input', () => {
+  formValues.desc = description.value;
+  saveOnLocalStorage();
 });
