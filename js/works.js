@@ -1,6 +1,12 @@
 const popup = document.getElementById('popup');
 const btnClosePopup = document.getElementById('btnClosePopup');
 
+popup.addEventListener('click', (e) => {
+  if (e.target.id === 'popup') {
+    popup.style.display = 'none';
+  }
+});
+
 btnClosePopup.addEventListener('click', () => {
   popup.style.display = 'none';
 });
@@ -92,8 +98,10 @@ const createWorkHTML = (work) => {
         <button class="button works__button">See project</button>
     </div>
   `;
-  const btnWorks = workCnt.querySelector('.works__button');
-  btnWorks.addEventListener('click', () => showWorksInfo(work));
+  const btnWork = workCnt.querySelector('.works__button');
+  const imgWork = workCnt.querySelector('figure');
+  btnWork.addEventListener('click', () => showWorksInfo(work));
+  imgWork.addEventListener('click', () => showWorksInfo(work));
   return workCnt;
 };
 
