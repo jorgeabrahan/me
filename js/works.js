@@ -92,8 +92,10 @@ const createWorkHTML = (work) => {
         <button class="button works__button">See project</button>
     </div>
   `;
-  const btnWorks = workCnt.querySelector('.works__button');
-  btnWorks.addEventListener('click', () => showWorksInfo(work));
+  const btnWork = workCnt.querySelector('.works__button');
+  const imgWork = workCnt.querySelector('figure');
+  btnWork.addEventListener('click', () => showWorksInfo(work));
+  imgWork.addEventListener('click', () => showWorksInfo(work));
   return workCnt;
 };
 
