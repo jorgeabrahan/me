@@ -354,6 +354,7 @@ My works section
   width: 100%;
   scale: 1;
   transition: scale 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .card__image:hover {
