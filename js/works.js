@@ -1,6 +1,12 @@
 const popup = document.getElementById('popup');
 const btnClosePopup = document.getElementById('btnClosePopup');
 
+popup.addEventListener('click', (e) => {
+  if (e.target.id === 'popup') {
+    popup.style.display = 'none';
+  }
+});
+
 btnClosePopup.addEventListener('click', () => {
   popup.style.display = 'none';
 });
