@@ -104,6 +104,10 @@ Utility classes
   padding-left: 0;
 }
 
+.social object {
+  pointer-events: none;
+}
+
 .button {
   font-size: 1.3rem;
   background-color: #36b37f;
