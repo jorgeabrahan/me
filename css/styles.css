@@ -357,6 +357,17 @@ My works section
   cursor: pointer;
 }
 
+.card__image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgb(128, 128, 128, 0.2));
+  pointer-events: none;
+}
+
 .card__image:hover {
   scale: 1.25;
 }
@@ -364,6 +375,7 @@ My works section
 .card__content {
   padding: 1rem;
   border-radius: var(--border-radius);
+  /* border-top: 3px solid #d4dcd8; */
   background-color: #fff;
   translate: 0 -10px;
 }
