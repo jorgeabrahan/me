@@ -151,14 +151,26 @@ Toolbar (Header)
 */
 
 .header {
-  background-image: url('../img/decorators/headline/rectangle.svg'), url('../img/decorators/headline/cube-opacity.svg'),
-    url('../img/decorators/headline/cube.svg'), url('../img/decorators/headline/cube-left.svg'),
-    url('../img/decorators/headline/cylinder.svg'), url('../img/decorators/headline/cylinder-opacity.svg'),
-    url('../img/decorators/headline/pyramid.svg'), url('../img/decorators/headline/circle-lines.svg');
+  background-image:
+    url('../img/decorators/headline/rectangle.svg'),
+    url('../img/decorators/headline/cube-opacity.svg'),
+    url('../img/decorators/headline/cube.svg'),
+    url('../img/decorators/headline/cube-left.svg'),
+    url('../img/decorators/headline/cylinder.svg'),
+    url('../img/decorators/headline/cylinder-opacity.svg'),
+    url('../img/decorators/headline/pyramid.svg'),
+    url('../img/decorators/headline/circle-lines.svg');
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-position: top 10% right -5%, top 25% left 5%, top 40% right -50%, bottom 25% left -8%, bottom 10% right,
-    bottom 30% left 40%, top 0 left -500%, center 20%;
+  background-position:
+    top 10% right -5%,
+    top 25% left 5%,
+    top 40% right -50%,
+    bottom 25% left -8%,
+    bottom 10% right,
+    bottom 30% left 40%,
+    top 0 left -500%,
+    center 20%;
   background-size: 90px, 30px, 150px, 80px, 50px, 25px, 0, 700px 680px;
   max-width: var(--max-width-layout);
   margin-inline: auto;
@@ -453,8 +465,11 @@ Footer
 
 .footer {
   padding: 0 var(--horizontal-spacing);
-  background-image: url('../img/decorators/footer/column-mobile.svg'), url('../img/decorators/footer/column.svg'),
-    url('../img/decorators/footer/rock.svg'), url('../img/decorators/footer/rectangle.svg');
+  background-image:
+    url('../img/decorators/footer/column-mobile.svg'),
+    url('../img/decorators/footer/column.svg'),
+    url('../img/decorators/footer/rock.svg'),
+    url('../img/decorators/footer/rectangle.svg');
   background-repeat: no-repeat;
   background-position: bottom 0 right 0, 200% 0, 200% 0, 200% 0;
   background-size: 80px, 0, 0, 0;
@@ -697,8 +712,15 @@ Popup
   */
 
   .header {
-    background-position: top -8% right 20%, top 10% left 35%, top 20% right -5%, bottom 20% left 10%,
-      bottom 18% right 18%, bottom 30% left 40%, top 10% left -10%, top 45% center;
+    background-position:
+      top -8% right 20%,
+      top 10% left 35%,
+      top 20% right -5%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 10% left -10%,
+      top 45% center;
     background-size: 130px, 50px, 200px, 125px, 190px, 130px, 150px, 1500px 1000px;
   }
 
@@ -830,16 +852,30 @@ Popup
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header {
-    background-position: top -8% right 25%, top 10% left 35%, top 20% right -5%, bottom 20% left 10%,
-      bottom 18% right 18%, bottom 30% left 40%, top 25% left 5%, top 65% center;
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right -5%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
     background-size: 130px, 50px, 280px, 125px, 190px, 130px, 160px, 1600px 1300px;
   }
 }
 
 @media (min-width: 1280px) {
   .header {
-    background-position: top -8% right 25%, top 10% left 35%, top 20% right 0%, bottom 20% left 10%,
-      bottom 18% right 18%, bottom 30% left 40%, top 25% left 5%, top 65% center;
+    background-position:
+      top -8% right 25%,
+      top 10% left 35%,
+      top 20% right 0%,
+      bottom 20% left 10%,
+      bottom 18% right 18%,
+      bottom 30% left 40%,
+      top 25% left 5%,
+      top 65% center;
     background-size: 130px, 50px, 280px, 125px, 190px, 130px, 160px, 1600px 1300px;
   }
 
