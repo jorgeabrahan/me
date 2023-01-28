@@ -127,6 +127,7 @@ Utility classes
 
 .button:active {
   background-color: #008552;
+  transform: scale(0.95);
 }
 
 .sr-only {
@@ -150,35 +151,15 @@ Toolbar (Header)
 */
 
 .header {
-  background-image:
-    url("../img/decorators/headline/rectangle.svg"),
-    url("../img/decorators/headline/cube-opacity.svg"),
-    url("../img/decorators/headline/cube.svg"),
-    url("../img/decorators/headline/cube-left.svg"),
-    url("../img/decorators/headline/cylinder.svg"),
-    url("../img/decorators/headline/cylinder-opacity.svg"),
-    url("../img/decorators/headline/pyramid.svg"),
-    url("../img/decorators/headline/circle-lines.svg");
+  background-image: url('../img/decorators/headline/rectangle.svg'), url('../img/decorators/headline/cube-opacity.svg'),
+    url('../img/decorators/headline/cube.svg'), url('../img/decorators/headline/cube-left.svg'),
+    url('../img/decorators/headline/cylinder.svg'), url('../img/decorators/headline/cylinder-opacity.svg'),
+    url('../img/decorators/headline/pyramid.svg'), url('../img/decorators/headline/circle-lines.svg');
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-position:
-    top 10% right -5%,
-    top 25% left 5%,
-    top 40% right -50%,
-    bottom 25% left -8%,
-    bottom 10% right,
-    bottom 30% left 40%,
-    top 0 left -500%,
-    center 20%;
-  background-size:
-    90px,
-    30px,
-    150px,
-    80px,
-    50px,
-    25px,
-    0,
-    700px 680px;
+  background-position: top 10% right -5%, top 25% left 5%, top 40% right -50%, bottom 25% left -8%, bottom 10% right,
+    bottom 30% left 40%, top 0 left -500%, center 20%;
+  background-size: 90px, 30px, 150px, 80px, 50px, 25px, 0, 700px 680px;
   max-width: var(--max-width-layout);
   margin-inline: auto;
 }
@@ -333,49 +314,22 @@ My works section
   position: relative;
 }
 
-.card__image-container::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #ebf0eea7;
-  transition: background-color 400ms ease-in-out;
-}
-
-.works__card:hover > .card__image-container::before {
-  background-color: #ebf0ee20;
-}
-
 .card__image {
   object-fit: cover;
   height: 250px;
   width: 100%;
-  scale: 1;
-  transition: scale 500ms ease-in-out;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
   cursor: pointer;
 }
 
-.card__image-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgb(128, 128, 128, 0.2));
-  pointer-events: none;
-}
-
 .card__image:hover {
-  scale: 1.25;
+  transform: scale(1.2);
 }
 
 .card__content {
   padding: 1rem;
   border-radius: var(--border-radius);
-  /* border-top: 3px solid #d4dcd8; */
   background-color: #fff;
   translate: 0 -10px;
 }
@@ -423,13 +377,9 @@ About me section
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../img/decorators/about_me/bird.svg"), url("../img/decorators/about_me/ship.svg");
-  background-position:
-    top 5% right -25%,
-    bottom 20% left -20%;
-  background-size:
-    140px,
-    140px;
+  background-image: url('../img/decorators/about_me/bird.svg'), url('../img/decorators/about_me/ship.svg');
+  background-position: top 5% right -25%, bottom 20% left -20%;
+  background-size: 140px, 140px;
   background-repeat: no-repeat;
 }
 
@@ -502,22 +452,11 @@ Footer
 
 .footer {
   padding: 0 var(--horizontal-spacing);
-  background-image:
-    url("../img/decorators/footer/column-mobile.svg"),
-    url("../img/decorators/footer/column.svg"),
-    url("../img/decorators/footer/rock.svg"),
-    url("../img/decorators/footer/rectangle.svg");
+  background-image: url('../img/decorators/footer/column-mobile.svg'), url('../img/decorators/footer/column.svg'),
+    url('../img/decorators/footer/rock.svg'), url('../img/decorators/footer/rectangle.svg');
   background-repeat: no-repeat;
-  background-position:
-    bottom 0 right 0,
-    200% 0,
-    200% 0,
-    200% 0;
-  background-size:
-    80px,
-    0,
-    0,
-    0;
+  background-position: bottom 0 right 0, 200% 0, 200% 0, 200% 0;
+  background-size: 80px, 0, 0, 0;
 }
 
 .footer__grid {
@@ -738,24 +677,9 @@ Popup
   */
 
   .header {
-    background-position:
-      top -8% right 20%,
-      top 10% left 35%,
-      top 20% right -5%,
-      bottom 20% left 10%,
-      bottom 18% right 18%,
-      bottom 30% left 40%,
-      top 10% left -10%,
-      top 45% center;
-    background-size:
-      130px,
-      50px,
-      200px,
-      125px,
-      190px,
-      130px,
-      150px,
-      1500px 1000px;
+    background-position: top -8% right 20%, top 10% left 35%, top 20% right -5%, bottom 20% left 10%,
+      bottom 18% right 18%, bottom 30% left 40%, top 10% left -10%, top 45% center;
+    background-size: 130px, 50px, 200px, 125px, 190px, 130px, 150px, 1500px 1000px;
   }
 
   .toolbar {
@@ -826,12 +750,8 @@ Popup
   */
 
   .aboutme__header {
-    background-position:
-      top -5% right 0%,
-      bottom 20% left 0%;
-    background-size:
-      240px,
-      240px;
+    background-position: top -5% right 0%, bottom 20% left 0%;
+    background-size: 240px, 240px;
   }
 
   /*
@@ -896,70 +816,28 @@ Popup
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header {
-    background-position:
-      top -8% right 25%,
-      top 10% left 35%,
-      top 20% right -5%,
-      bottom 20% left 10%,
-      bottom 18% right 18%,
-      bottom 30% left 40%,
-      top 25% left 5%,
-      top 65% center;
-    background-size:
-      130px,
-      50px,
-      280px,
-      125px,
-      190px,
-      130px,
-      160px,
-      1600px 1300px;
+    background-position: top -8% right 25%, top 10% left 35%, top 20% right -5%, bottom 20% left 10%,
+      bottom 18% right 18%, bottom 30% left 40%, top 25% left 5%, top 65% center;
+    background-size: 130px, 50px, 280px, 125px, 190px, 130px, 160px, 1600px 1300px;
   }
 }
 
 @media (min-width: 1280px) {
   .header {
-    background-position:
-      top -8% right 25%,
-      top 10% left 35%,
-      top 20% right 0%,
-      bottom 20% left 10%,
-      bottom 18% right 18%,
-      bottom 30% left 40%,
-      top 25% left 5%,
-      top 65% center;
-    background-size:
-      130px,
-      50px,
-      280px,
-      125px,
-      190px,
-      130px,
-      160px,
-      1600px 1300px;
+    background-position: top -8% right 25%, top 10% left 35%, top 20% right 0%, bottom 20% left 10%,
+      bottom 18% right 18%, bottom 30% left 40%, top 25% left 5%, top 65% center;
+    background-size: 130px, 50px, 280px, 125px, 190px, 130px, 160px, 1600px 1300px;
   }
 
   .aboutme__header {
     gap: 1rem;
-    background-position:
-      top 10% right -5%,
-      bottom 40% left -5%;
-    background-size:
-      300px,
-      300px;
+    background-position: top 10% right -5%, bottom 40% left -5%;
+    background-size: 300px, 300px;
   }
 
   .footer {
-    background-position:
-      bottom 0 right -30%,
-      bottom 20% right -13%,
-      bottom 20% left 23%,
-      left -6% bottom 5%;
-    background-size:
-      140px,
-      300px,
-      120px,
-      200px;
+    background-position: bottom 0 right -30%, bottom 20% right -13%, bottom 20% left 23%, left -6% bottom 5%;
+    background-size: 140px, 300px, 120px, 200px;
   }
 
   .footer__grid {
