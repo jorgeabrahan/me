@@ -14,7 +14,7 @@ btnClosePopup.addEventListener('click', () => {
 const myWorks = [
   {
     img: {
-      src: '../img/mockups/todo.jpg',
+      src: './img/mockups/todo.jpg',
       alt: 'Todo List Website preview',
     },
     video: '../videos/todos.mp4',
@@ -29,7 +29,7 @@ const myWorks = [
   },
   {
     img: {
-      src: '../img/mockups/awesome_books.jpg',
+      src: './img/mockups/awesome_books.jpg',
       alt: 'Awesome Books Website preview',
     },
     video: '../videos/awesome_books.mp4',
@@ -44,7 +44,7 @@ const myWorks = [
   },
   {
     img: {
-      src: '../img/mockups/regclients.jpg',
+      src: './img/mockups/regclients.jpg',
       alt: 'Clients Registry Website preview',
     },
     video: '../videos/regclients.mp4',
@@ -59,7 +59,7 @@ const myWorks = [
   },
   {
     img: {
-      src: '../img/mockups/fullstack_course.jpg',
+      src: './img/mockups/fullstack_course.jpg',
       alt: 'Fullstack Course Website preview',
     },
     video: '../videos/fullstack_course.mp4',
@@ -74,7 +74,7 @@ const myWorks = [
   },
   {
     img: {
-      src: '../img/mockups/finance_manger.jpg',
+      src: './img/mockups/finance_manger.jpg',
       alt: 'Finance Manager Website preview',
     },
     video: '../videos/budget_calc.mp4',
@@ -89,7 +89,7 @@ const myWorks = [
   },
   {
     img: {
-      src: '../img/mockups/watch.jpg',
+      src: './img/mockups/watch.jpg',
       alt: 'Watch Website preview',
     },
     video: '../videos/watch.mp4',
